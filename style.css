@@ -1,5 +1,4 @@
 
-
 body{
   font-family: 'Avenir Next', sans-serif;
   color: #28384D
@@ -62,6 +61,8 @@ p{color: #747f8c}
   background-color: transparent;
   border-width:0;
 }
+.dropdown-item{white-space: normal}
+
 @media (min-width: 992px) {
 .dropdown-menu{
   left: 100%;  
@@ -151,6 +152,8 @@ footer a.active{
 }
 /*------------------------------------------*/
 
+ul.liste1, ul.liste2{padding-left: 1rem}
+ul.liste1 ul, ul.liste2 ul{padding-left:0.1rem }
 
 ul.liste1 li{
   list-style-type: none;

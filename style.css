@@ -3,7 +3,7 @@ body{
   font-family: 'Avenir Next', sans-serif;
   color: #28384D
 }
-
+a:hover{color:#41aaff }
 h1, h2, h3, .h1, .h2, .h3{font-weight: normal}
 
 p{color: #747f8c}
@@ -22,9 +22,7 @@ p{color: #747f8c}
 .color2, .color2:hover{color: #40454d} /* gris2 */
 
 
-.btn{padding: .6rem 1.3rem; border-radius: 1rem; white-space: normal;
-
-}
+.btn{padding: .6rem 1.3rem; border-radius: 1rem; white-space: normal;cursor: pointer;}
 
 .form-control{
   padding: 1em;
@@ -159,6 +157,11 @@ ul.liste1 li{
   list-style-type: none;
   padding: 0
 }
+ul.liste1 li ul li{
+  list-style-type: none;
+  padding-left: 3em;
+}
+
 ul.liste1 li:before{
 content:''; 
 display:inline-block; 

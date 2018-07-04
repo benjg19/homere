@@ -29,6 +29,11 @@
 
  <body id="top">
 
+<div class="alert alert-info alert-dismissible cookiealert" role="alert">    
+  <button type="button" class="close acceptcookies" data-dismiss="alert" aria-label="close">&times;</button>
+  <strong>Information !</strong> En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies ou technologies similaires de traçage pour réaliser des statistiques de visites.
+</div>
+
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid py-3 px-md-5">
       <a class="navbar-brand" href="/">
@@ -86,6 +91,50 @@
       </div>
       </nav>
 
+ <!-- Cokies alert -->     
+<script type="text/javascript">
+  (function () {
+    "use strict";
+
+    var cookieAlert = document.querySelector(".cookiealert");
+    var acceptCookies = document.querySelector(".acceptcookies");
+
+    cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+    if (!getCookie("acceptCookies")) {
+        cookieAlert.classList.add("show");
+    }
+
+    acceptCookies.addEventListener("click", function () {
+        setCookie("acceptCookies", true, 60);
+        cookieAlert.classList.remove("show");
+    });
+})();
+
+// Cookie functions stolen from w3schools
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+</script>
 
 
               <section class="container-fluid py-5">

@@ -47,6 +47,11 @@
         <div class="collapse navbar-collapse justify-content-end">
 
           <ul class=" navbar-nav ">
+                 
+            <li class="nav-item">
+              <a class="nav-link " href="/transport-dobjets">Transport d'objets</a>
+            </li>
+            
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle " href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Déménagement</a>
               <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -64,7 +69,7 @@
                     <small class="d-md-block d-none dropdown__link-block-copy">Déménagment d'entreprise.</small>
                   </div>
                 </a>
-                <a class="dropdown-item media " href="/demenagement-international">
+                <a class="d-none dropdown-item media " href="/demenagement-international">
                   <img src="/img/personnage-international-250px.png" alt="Personnage entreprise">
                   <div class="pl-3 media-body align-self-center">
                     <div class="h5 m-0 font-weight-normal">International</div>
@@ -73,10 +78,8 @@
                 </a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link " href="/transport-dobjets">Transport d'objets</a>
-            </li>
-            <li class="nav-item">
+
+            <li class="d-none nav-item">
               <a class="nav-link " href="/garde-meuble">Garde-meuble</a>
             </li>
             <li class="nav-item">
@@ -137,6 +140,7 @@ function getCookie(cname) {
 </script>
 
 
+
         <section class="container-fluid">
   <article class="container">
     <div class="row justify-content-around align-items-center">
@@ -160,38 +164,16 @@ function getCookie(cname) {
           <h2 class="text-center">Quel service avez-vous besoin ?</h2>
         </div>
       </div>
-       <div class="row" id="quelservice1">
-        <div class="col-md-4">
-          <a class="d-block p-4" href="/demenagement-particulier">
-            <img class="img-fluid mx-auto d-block " src="/img/personnage-particulier.png" width="250">
-            <h3 class="h4 pt-5 pb-1">Déménagement pour particulier</h3>
-            <p class="font1">En savoir plus →</p>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="d-block p-4 " href="/demenagement-entreprise">
-            <img class="img-fluid mx-auto d-block" src="/img/personnage-entreprise.png" width="250">
-            <h3 class="h4 pt-5 pb-1">Déménagement d'entreprise</h3>
-            <p class="font2">En savoir plus →</p>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="d-block p-4" href="/demenagement-international">
-            <img class="img-fluid mx-auto d-block" src="/img/personnage-international.png" width="250">
-            <h3 class="h4 pt-5 pb-1">Déménagement international</h3>
-            <p class="font3">En savoir plus →</p>
-          </a>
-        </div>
-      </div>
-      <div class="row mb-5" id="quelservice2">
-        <div class="col-md-6 mt-0 mt-md-3">
+   
+   <div class="row mb-5" id="quelservice2">
+        <div class="col-md-12 mt-0 mt-md-3">
           <a class="d-block p-4" href="/transport-dobjets">
             <img class="img-fluid mx-auto d-block" src="/img/statue.png" width="270">
             <h3 class="h4 pt-5 pb-1">Transport d'objets</h3>
             <p class="font4">En savoir plus →</p>
           </a>
         </div>
-        <div class="col-md-6 mt-0 mt-md-3">
+        <div class="@col-md-6 mt-0 mt-md-3">
           <a class="d-block p-4" href="/garde-meuble">
             <img class="img-fluid mx-auto d-block" src="/img/Garde-meubles.png" width="270">
             <h3 class="h4 pt-5 pb-1">Garde-meuble</h3>
@@ -199,6 +181,31 @@ function getCookie(cname) {
           </a>
         </div>
       </div>
+   
+       <div class="row" id="quelservice1">
+        <div class="col-md-6">
+          <a class="d-block p-4" href="/demenagement-particulier">
+            <img class="img-fluid mx-auto d-block " src="/img/personnage-particulier.png" width="250">
+            <h3 class="h4 pt-5 pb-1">Déménagement pour particulier</h3>
+            <p class="font1">En savoir plus →</p>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a class="d-block p-4 " href="/demenagement-entreprise">
+            <img class="img-fluid mx-auto d-block" src="/img/personnage-entreprise.png" width="250">
+            <h3 class="h4 pt-5 pb-1">Déménagement d'entreprise</h3>
+            <p class="font2">En savoir plus →</p>
+          </a>
+        </div>
+        <div class="d-none col-md-4">
+          <a class="d-block p-4" href="/demenagement-international">
+            <img class="img-fluid mx-auto d-block" src="/img/personnage-international.png" width="250">
+            <h3 class="h4 pt-5 pb-1">Déménagement international</h3>
+            <p class="font3">En savoir plus →</p>
+          </a>
+        </div>
+      </div>
+   
   </article>
 </section>
   <section>

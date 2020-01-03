@@ -22,7 +22,19 @@ p{color: #747f8c}
 .color2, .color2:hover{color: #40454d} /* gris2 */
 
 
-.btn{padding: .6rem 1.3rem; border-radius: 1rem; white-space: normal;cursor: pointer;}
+.btn{
+  padding: .6rem 1.3rem;
+  border-radius: 1rem;
+  white-space: normal;
+  cursor: pointer;
+  background-color: #82eaa9;
+  color: #fff;
+  border-width: 3px;
+  border-color: #89efa8;
+}
+.btn:hover{
+  background-color: #86efa9
+}
 
 .form-control{
   padding: 1em;
@@ -82,7 +94,7 @@ p{color: #747f8c}
 
 @media (min-width: 992px) {
 .dropdown-menu{
-  left: 100%;  
+  left: 100%;
   margin-left: -290px;
   width: 450px;
 }
@@ -182,14 +194,14 @@ ul.liste1 li ul li{
 }
 
 ul.liste1 li:before{
-content:''; 
-display:inline-block; 
-height:1em; 
-width:1em; 
-background-image:url('img/check.svg'); 
-background-size:contain; 
-background-repeat:no-repeat; 
-padding-left: 2em; 
+content:'';
+display:inline-block;
+height:1em;
+width:1em;
+background-image:url('img/check.svg');
+background-size:contain;
+background-repeat:no-repeat;
+padding-left: 2em;
 }
 ul.liste2 li{
   list-style-type: none;
@@ -201,8 +213,3 @@ ul.liste2 li{
   border: solid #f0ebf4 2px;
   border-radius: 3px
 }
-
-
-
-
-

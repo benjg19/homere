@@ -1,6 +1,20 @@
-
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Black.ttf") format("truetype");
+  font-weight: 900;
+}
 body{
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #28384D
 }
 a:hover{color:#41aaff }
@@ -13,7 +27,7 @@ p{color: #747f8c}
 
 .font1{color: #82eaa9; font-weight: 600} /* vert */
 .font2{color: #f2a54e; font-weight: 600} /* jaune */
-.font3{color: #41aaff; font-weight: 600} /* bleu */
+.font3{color: #41aaff; font-weight: 600;} /* bleu */
 .font4{color: #AD97EF; font-weight: 600} /* bleu */
 .font5{color: #FF5D5D; font-weight: 600} /* bleu */
 .font6{color: #F1F5F9; font-weight: 600} /* blanc */
@@ -21,6 +35,7 @@ p{color: #747f8c}
 .color1{color: #747f8c} /* gris */
 .color2, .color2:hover{color: #40454d} /* gris2 */
 
+.fw9{font-size: 1.75rem;font-weight: 900}
 
 .btn{
   padding: .6rem 1.3rem;
@@ -30,10 +45,11 @@ p{color: #747f8c}
   background-color: #82eaa9;
   color: #fff;
   border-width: 4px;
-  border-color: #89efa8;
+  border-color: #fff;
+  font-weight: 900;
 }
 .btn:hover{
-  background-color: #86efa9
+  background-color: #86efa9;
 }
 
 .form-control{

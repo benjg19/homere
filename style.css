@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Inter';
-  src: url("/fonts/Inter-Light-BETA.ttf") format("truetype");
+  src: url("./fonts/Inter-Light-BETA.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("/fonts/Inter-SemiBold.ttf") format("truetype");
+  src: url("./fonts/Inter-SemiBold.ttf") format("truetype");
   font-weight: 600;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("/fonts/Inter-Black.ttf") format("truetype");
+  src: url("./fonts/Inter-Black.ttf") format("truetype");
   font-weight: 900;
 }
 body{
@@ -165,7 +165,6 @@ p{color: #747f8c}
 /* Footer */
 footer{
   background-color: #40a9ff;
-  min-height: 450px;
 }
 
 footer ul{

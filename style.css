@@ -35,10 +35,11 @@ p{color: #747f8c}
 .color1{color: #747f8c} /* gris */
 .color2, .color2:hover{color: #40454d} /* gris2 */
 
-.fw9{font-size: 1.75rem;font-weight: 600}
-
+#call .h3{font-size: 1.75rem;font-weight: 600}
+button .h4{font-weight: 600}
+.btn-link{color: #41aaff}.btn-link:hover{color: #82eaa9}
 .btn{
-  padding: .6rem 1.3rem;
+  padding: .6rem 0.8rem;
   border-radius: 1rem;
   white-space: normal;
   cursor: pointer;

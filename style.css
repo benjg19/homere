@@ -1,16 +1,19 @@
 @font-face {
   font-family: 'Inter';
-  src: url("./fonts/Inter-Light-BETA.ttf") format("truetype");
+  src: url("./fonts/Inter-Light-BETA.ttf") format("truetype"),
+  url("./fonts/Inter-Light-BETA.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("./fonts/Inter-SemiBold.ttf") format("truetype");
+  src: url("./fonts/Inter-SemiBold.ttf") format("truetype"),
+  url("./fonts/Inter-Light-BETA.woff") format("woff");
   font-weight: 600;
 }
 @font-face {
   font-family: 'Inter';
-  src: url("./fonts/Inter-Black.ttf") format("truetype");
+  src: url("./fonts/Inter-Black.ttf") format("truetype"),
+  url("./fonts/Inter-Light-BETA.woff") format("woff");
   font-weight: 900;
 }
 body{
@@ -35,8 +38,8 @@ p{color: #747f8c}
 .color1{color: #747f8c} /* gris */
 .color2, .color2:hover{color: #40454d} /* gris2 */
 
-#call .h3{font-size: 1.75rem;font-weight: 600}
 button .h4{font-weight: 600}
+
 .btn-link{color: #41aaff}.btn-link:hover{color: #82eaa9}
 .btn{
   padding: .6rem 0.8rem;
@@ -161,6 +164,7 @@ button .h4{font-weight: 600}
 }
 #call{background-color: #82eaa9}
 #call>div>div{min-height: 340px}
+#call .h3{font-size: 1.75rem;font-weight: 600}
 
 /*------------------------------------------*/
 
